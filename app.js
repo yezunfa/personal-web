@@ -10,6 +10,7 @@ var loginRouter = require('./routes/login');
 var homeRouter =require('./routes/home');
 var myblogRouter =require('./routes/myblog');
 var registerRouter = require('./routes/register');
+var newsRouter = require('./routes/news');
 var session=require('express-session');
 var flash =require('connect-flash');
 var app = express();
@@ -38,6 +39,7 @@ app.use('/login',loginRouter);
 app.use('/home' ,homeRouter);
 app.use('/myblog',myblogRouter);
 app.use('/register',registerRouter);
+app.use('/news',newsRouter);
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 

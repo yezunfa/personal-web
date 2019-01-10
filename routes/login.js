@@ -1,8 +1,6 @@
-
 var express = require('express');
 var router = express.Router();
 var db = require('../models/db');
-
 /* GET users listing. */
 router.get('/', function(req, res, ) {
     db.query("select * from user", function (rows) {
@@ -24,11 +22,6 @@ router.post('/',function (req,resp ) {
             // req.flash('error',"用户名或者密码错误");
             req.flash('error','登陆失败！！！');
             resp.redirect('login');
-        }
-
-    })
-
+        }})
 });
-
-
 module.exports = router;
