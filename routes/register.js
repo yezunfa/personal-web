@@ -21,7 +21,7 @@ router.post('/',function (req, res,) {
             db.query(Register_sql,[username,password],function(rows){
                 console.log('insert'+rows);
                 if(rows){
-                    res.render('login',{});
+                    res.redirect('login');
                 }else{
                     req.flash('err','注册失败');
                     res.redirect('register');

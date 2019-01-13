@@ -16,7 +16,7 @@ router.post('/',function (req,resp ) {
         console.log(rows);
         if (rows!=null && rows.length>0){
             //登陆成功
-            resp.render('home',{});
+            resp.redirect('home');
         } else{
             //登陆失败
             // req.flash('error',"用户名或者密码错误");

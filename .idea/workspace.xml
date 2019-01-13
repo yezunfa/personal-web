@@ -10,66 +10,14 @@
       <change afterPath="$PROJECT_DIR$/../studio_web/css/login.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../studio_web/register.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../studio_web/登录.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/db.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/number.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/pic1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/pic2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/pic3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/个人logo02.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/个人logo03.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/二维码.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/右箭头.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/图标/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/图标/10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/图标/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/图标/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/图标/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/图标/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/图标/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/图标/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/图标/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/图标/9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/图标/壁纸2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/图标1.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/图标2.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/图标3.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/壁纸1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/左箭头.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/日本1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/日本2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/日本3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/日本4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/日本5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/爱情.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/背景图.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/背景图2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/背景图3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/背景图4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/背景图6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/javascripts/index01.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/javascripts/jquery-3.2.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/stylesheets/home.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/stylesheets/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/stylesheets/myblog.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/stylesheets/reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/myblog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/home.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/login.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/myblog.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../myblog/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../myblog/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../myblog/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/../myblog/blog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../myblog/css/style.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../studio_web/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../studio_web/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../studio_web/design.html" beforeDir="false" afterPath="$PROJECT_DIR$/../studio_web/design.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/javascripts/login01.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/login01.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/login.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/login.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/register.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/register.pug" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -85,7 +33,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/login.pug">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
+            <state relative-caret-position="281">
               <caret line="19" column="84" selection-start-line="19" selection-start-column="84" selection-end-line="19" selection-end-column="84" />
             </state>
           </provider>
@@ -101,19 +49,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/home.pug">
+        <entry file="file://$PROJECT_DIR$/routes/login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+            <state relative-caret-position="446">
+              <caret line="23" column="35" lean-forward="true" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/stylesheets/reset.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="81">
+              <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/register.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="308">
+              <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -198,13 +155,13 @@
         <option value="$PROJECT_DIR$/views/news.pug" />
         <option value="$PROJECT_DIR$/public/stylesheets/login.css" />
         <option value="$PROJECT_DIR$/public/stylesheets/register.js" />
-        <option value="$PROJECT_DIR$/routes/register.js" />
         <option value="$PROJECT_DIR$/views/register.pug" />
-        <option value="$PROJECT_DIR$/routes/login.js" />
         <option value="$PROJECT_DIR$/public/stylesheets/reset.css" />
         <option value="$PROJECT_DIR$/public/javascripts/zhuce.js" />
         <option value="$PROJECT_DIR$/views/login.pug" />
         <option value="$PROJECT_DIR$/public/javascripts/login01.js" />
+        <option value="$PROJECT_DIR$/routes/register.js" />
+        <option value="$PROJECT_DIR$/routes/login.js" />
       </list>
     </option>
   </component>
@@ -245,6 +202,12 @@
               <item name="web_node_first" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="javascripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web_node_first" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web_node_first" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="web_node_first" type="b2602c69:ProjectViewProjectNode" />
@@ -322,12 +285,12 @@
       <workItem from="1547167961000" duration="3760000" />
       <workItem from="1547193668700" duration="5158000" />
       <workItem from="1547290852885" duration="15858000" />
-      <workItem from="1547339993350" duration="355000" />
+      <workItem from="1547339993350" duration="1860000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108285000" />
+    <option name="totallyTimeSpent" value="109790000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -343,15 +306,15 @@
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.12549537" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.12549537" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32402235" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5006605" side_tool="true" weight="0.1773743" />
-      <window_info anchor="bottom" id="Version Control" order="2" weight="0.58898306" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="2" visible="true" weight="0.58798885" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32960895" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.4993395" visible="true" weight="0.26396647" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.4993395" weight="0.26396647" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.3980447" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -569,34 +532,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/reset.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/login.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="84" selection-start-line="19" selection-start-column="84" selection-end-line="19" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/login01.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/home.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -641,8 +576,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/register.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="308">
+          <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/login.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="19" column="84" selection-start-line="19" selection-start-column="84" selection-end-line="19" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/login01.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="23" column="35" lean-forward="true" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/reset.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="27" />
         </state>
       </provider>
     </entry>
