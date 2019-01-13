@@ -9,7 +9,7 @@ html
         div.main
             div.title
                 span 进入你的主页
-            form(action='/login', method='post')
+            form(action='login', method='post')
               div.input-content
                  div
                     input(type='text', autocomplete='off', placeholder='用户名', name='userName' required='')
@@ -17,7 +17,7 @@ html
                     input(type='password', autocomplete='off', placeholder='密码', name='password' required='')
               div(style='text-align:center')
                  a(href='' )
-                     button.enter-btn(type='submit', onclick='validPwd()') 登录
+                     button.enter-btn(type='submit', onclick='return validPwd()') 登录
               div #{error}
               div.foot
                  div.left

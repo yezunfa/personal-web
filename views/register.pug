@@ -3,18 +3,22 @@ html
         meta(charset='utf-8')
         title 登陆界面
         link(rel='stylesheet', type='text/css', href='stylesheets/login.css')
+        script( type='text/javascript', src='/javascripts/zhuce.js')
     body
         .main
             .title
                 span 注册
-            form(action='user', method='post')
-                .input-content
+            form(action='register', method='post')
+                .input-content1
                     div
                         input(type='text', autocomplete='off', placeholder='用户名', name='userName', required='')
-                    div(style='margin-top: 16px')
-                        input(type='password', autocomplete='off', placeholder='登录密码', name='password', required='', maxlength='32')
-                    div(style='margin-top: 16px')
-                        input(type='password', autocomplete='off', placeholder='再次确定密码', name='password', required='', maxlength='32')
+                    div(style='margin-top: 0')
+                        input(type='password', autocomplete='off', placeholder='登录密码', name='password1', required='', maxlength='32')
+                    div(style='margin-bottom: 30px')
+                        input(type='password', autocomplete='off', placeholder='再次确定密码', name='password2', required='', maxlength='32')
                     div(style='text-align: center')
                         a(href='design.html')
-                            button.enter-btn(type='submit') 注册
+                            button.enter-btn(type='submit' onclick="return zhuce()") 注册
+                            div #{error}
+
+

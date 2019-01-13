@@ -63,6 +63,15 @@ body{
     padding-left: 10px;
     padding-right: 10px;
 }
+.input-content1 input {
+    width: 348px;
+    height: 40px;
+    border: 1px solid #dad9d6;
+    background: #ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 
 .enter-btn {
     width: 350px;
