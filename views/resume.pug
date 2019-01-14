@@ -1,0 +1,225 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        title 简历
+        link(rel='stylesheet', type='text/css', href='stylesheets/resume.css')
+    body
+        aside
+            a.cur_a
+                span 首页
+            a
+                span 关于我
+            a
+                span 技能
+            a
+                span 经验
+            a
+                span 联系我
+        section#page1.page_one
+            nav
+                .nav_wrap
+                    .resume_logo
+                        a(href='index.html') Resume
+                    .nav_bar
+                        ul.nav_bar_ul
+                            li
+                                a(href='resume') My resume
+                            li
+                                a(href='home') home
+                            li
+                                a(href='myblog') myblog
+                            li
+                                a(href='register') register
+                            li
+                                a(href='login') login
+            .cen_con
+                .portrait
+                    img(onmousemove="this.src='images/22.png'", onmouseout="this.src='images/portrait1.jpg'", src='images/portrait1.jpg')
+                .cen_text
+                    h2 世上只有想不通的人，没有走不通的路。
+                    hr
+                    h3 叶尊发
+                    h3 Web前端工程师
+                    h3 求职：深圳
+                    h3 13979744131
+            .down_arrow
+                a.scroll
+                    span
+        section#page2.page_two
+            .con_wrap
+                .tit_wrap
+                    h1 关于我
+                    .scissors
+                        span
+                    h2  如果debugging是一种消灭bug的过程,那编程就一定是把bug放进去的过程。
+                .myinfo
+                    table
+                        tbody
+                            tr
+                                td(rowspan='6')
+                                    img(src='images/portrait1.jpg')
+                                td 姓名 | 叶尊发
+                                td 手机 | 13979744131
+                            tr
+                                td 性别 | 男
+                                td 邮箱 | 619489025@qq.com
+                            tr
+                                td 出生 | 1997.11.10
+                                td QQ号 | 619489025
+                            tr
+                                td 居住 | 深圳市南山区
+                                td 户籍 | 江西省赣州市
+                            tr
+                                td 学历 | 本科
+                                td 学校 | 江西农业大学
+                            tr
+                                td 专业 | 软件工程
+                                td 英语 | 英语六级
+                            tr
+                                td(colspan='3')
+                                    p 项目：
+                                    br
+                                    a(href='news') 1. 一点资讯
+                                    br
+                                    a(href='')     2. 苏宁易购商城
+                                    br
+                                    br
+                                    p 小作品
+                                    br
+                                    a(href='') 1. 个人博客
+                                    a(href='')   2. 个人主页
+                                    br
+            .down_arrow
+                a.scroll
+                    span
+        section#page3.page_three
+            .con_wrap
+                .tit_wrap
+                    h1 技能
+                    .scissors
+                        span
+                    h2 代码，我们眼中的世界，别人眼中的天书。
+                .skill_con
+                    .canvas_wrap
+                        .canvas_con
+                            .text_con
+                                p.percent 90%
+                                p.chart_title HTML5
+                            canvas#html5(width='160', height='160')
+                        .canvas_con
+                            .text_con
+                                p.percent 90%
+                                p.chart_title CSS3
+                            canvas#css3(width='160', height='160')
+                        .canvas_con
+                            .text_con
+                                p.percent 75%
+                                p.chart_title JS
+                            canvas#js(width='160', height='160')
+                        .canvas_con
+                            .text_con
+                                p.percent 80%
+                                p.chart_title JQUERY
+                            canvas#jq(width='160', height='160')
+                        .canvas_con
+                            .text_con
+                                p.percent 70%
+                                p.chart_title BOOTSTRAP
+                            canvas#bs(width='160', height='160')
+                        .canvas_con
+                            .text_con
+                                p.percent 80%
+                                p.chart_title PS
+                            canvas#ps(width='160', height='160')
+                    .text_wrap
+                        p 1.  熟练HTML5，CSS3，JavaScript技术，开发符合W3C标准的前端网页。
+                        p 2.  熟练使用jQuery，bootstrap等前端框架技术。
+                        p 3.  熟悉sass工具，扩展css功能,提高css功能和效率。
+                        p 4.  熟悉Ajax的运行机制，能使用ajax进行数据交互。
+                        p 5.  熟练使用PS，墨刀等工具，能快速切图和搭建原型图。
+                        p 6.  熟悉W3C标准，对表现与数据分离、Web语义化等有较为深刻的理解。
+                        p 7.  精通流体布局和弹性布局，能适应各种分辨率。
+                        p 8.  熟悉各种主流浏览器的差异性，有解决主流浏览器的兼容性问题的经验。
+            .down_arrow
+                a.scroll
+                    span
+        section#page4.page_four
+            .con_wrap
+                .tit_wrap
+                    h1 工作经验
+                    .scissors
+                        span
+                    h2 我现在做的一切仅仅是为了不让未来的自己后悔。
+                .work_con
+                    .programe
+                        .work_time
+                            | 1个月
+                            br
+                            | 电商购票平台
+                        .work_text
+                            .triangle-left
+                            .exCon
+                                h4 开发时间：2018.12-2019.1
+                                h5 开发工具：web storm \git\Hbuilder
+                                p 项目描述：
+                                p
+                                    | 未完待续
+                                p    大麦网购票系统
+                                p 责任描述：
+                                p 1. 根据项目需求，快速构造。
+                                p 2. 参与页面的部分设计
+                                p 3. 小组组长，负责前端网站搭建以及以git为核心的团队合作
+                    .programe
+                        .work_time
+                            | 1个月
+                            br
+                            | 个人博客展示
+                        .work_text
+                            .triangle-left
+                            .exCon
+                                h4 开发时间：2018.12-2019.1
+                                h5 开发工具：webstorm
+                                p 项目描述：
+                                p 主要是个人这个月以来的实战练习，由易到难从简单的博客页面到后期链接数据库，实现动态链接。
+                                p 个人完成
+                                p 责任描述：
+                                p 1. 根据模板进行网页的前端搭建。
+                                p 2. 个人发挥。
+            .down_arrow
+                a.scroll
+                    span
+        section#page5.page_five
+            .con_wrap
+                .tit_wrap
+                    h1 联系我
+                    .scissors
+                        span
+                    h2 耐得住寂寞，做得成大事。
+                .contact_detail
+                    ul.con_style
+                        li
+                            span
+                            p 广东省深圳市
+                        li
+                            span
+                            p 619489025@qq.com
+                        li
+                            span
+                            p 13979744131
+                    .contact_info
+                        form(action='', method='get')
+                            label
+                                input#username(type='text', placeholder='你的名字', required='')
+                                p#check_username
+                            label
+                                input#usermail(type='text', placeholder='你的邮箱', required='')
+                                p#check_usermail
+                            label
+                                input#usertheme(type='text', placeholder='主题', required='', maxlength='25')
+                                p#check_usertheme
+                            label
+                                textarea#usercon(placeholder='内容', required='')
+                                p#check_usercon
+                            button 发送
+        script(type='text/javascript', src='/javascripts/resume01.js')
