@@ -4,7 +4,7 @@ db.query=function (sql,queryArray,callback) {
     var connect=mysql.createConnection({
         host:"localhost",
         user:'root',
-        password:'llp2656wa',
+        password:'',
         database:"test_first",
         port:3306
     });
