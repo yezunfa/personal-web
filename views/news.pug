@@ -2,312 +2,318 @@ doctype html
 head
     meta(charset='UTF-8')
     title 一点资讯
-    link(rel='stylesheet' href='/stylesheets/reset.css')
-    link(rel='stylesheet' href='/stylesheets/news.css')
-    link(rel='stylesheet' href='/stylesheets/news_font.css')
-.wrap
-    header.header
-        .header_top
-            ul.header_right.clear-fix
-                li
-                    a(href='#') 品牌介绍
-                li
-                    a(href='#') 侵权投诉
-                    span
-                li
-                    a(href='#') 代理合作
-                    span
-                li
-                    a(href='#') 校园大使
-                    span
-        .header_search
-            .search_left
-                .logo
-                .icon_logo
-                input(type='text' placeholder='大家都在搜')
-                button#btn 搜索
-            .search_right
-                ul.clear_fix
-                    li.login_button
-                        a(href='#')
-                            button 登录
-                    li
-                        a(href='home') 我的工作室
-                        span
-                    li
-                        a(href='myblog') 我的博客
-                        span
-        .header_nav
-            ul.clear_fix
-                li
-                    a.active(href='#') 首页
-                li
-                    a(href='#') 学院
-                li
-                    a(href='#') 下载
-                li
-                    a(href='#') 图文课
-                li
-                    a(href='#') 论坛
-                li
-                    a(href='#') APP
-                li
-                    a(href='#') 问答
-                li
-                    a(href='#') 商城
-                li
-                    a(href='#') VIP会员
-                li
-                    a(href='#') 活动
-                li
-                    a(href='#') GitChat
-                li
-                    a(href='#') ITeye
-                li#down
-                    a(href='#')
-                        img(src='images/news_img/down.png')
-            .list
-                ul.list_down.clear_fix
-                    li
-                        a(href='#') 推荐
-                    li
-                        a(href='#') 关注
-                    li
-                        a(href='#') 程序人生
-                    li
-                        a(href='#') 前端
-                    li
-                        a(href='#') 架构
-                    li
-                        a(href='#') 区块链
-                    li
-                        a(href='#') 编程语言
-                    li
-                        a(href='#') 数据库
-                    li
-                        a(href='#') 游戏开发
-                    li
-                        a(href='#') 运维
-                    li
-                        a(href='#') 人工智能
-                    li
-                        a(href='#') 移动开发
-                    li
-                        a(href='#') 安全
-                    li
-                        a(href='#') 云计算/人工智能
-                    li
-                        a(href='#') 研发管理
-                    li
-                        a(href='#') 物联网
-                    li
-                        a(href='#') 计算机基础
-                    li
-                        a(href='#') 音视频开发
-                    li
-                        a(href='#') 其他
-    #wraper
-        .content.clear_fix
-            // 左边区域内容 一列
-            .content_left
-                .left_top
-                    img(src='images/news_img/1.jpg' alt='')
-                    p 小伙直升机迎娶新娘，真刺激
-                .left_bottom
-                    ul
-                       each name in news
-                          li.clear_fix
-                             a(href='#')
-                                .bottom_left
-                                    img(src=name.img1)
-                                .bottom_right
-                                    p #{name.title}
-                                    .clear_fix
-                                        span
-                                            img.user_icon(src=name.img2)
-                                        span 毛罗聊球
-                                        span 144评
-                                        span 刚刚
-                                        span.close X
+    link(rel='stylesheet', href='/stylesheets/reset.css')
+    link(rel='stylesheet', href='/stylesheets/news.css')
+    link(rel='stylesheet', href='/stylesheets/news_font.css')
+    script(rel='text/javascript' , src='/javascripts/vue.js')
+    script(rel='text/javascript' , src='/javascripts/vue-resource.min.js')
+body
+    .wrap
+        #showVue
+            header.header
+                .header_top
+                    ul.header_right.clear-fix
+                        li
+                            a(href='#') 品牌介绍
+                        li
+                            a(href='#') 侵权投诉
+                            span
+                        li
+                            a(href='#') 代理合作
+                            span
+                        li
+                            a(href='#') 校园大使
+                            span
+                .header_search
+                    .search_left
+                        .logo
+                        .icon_logo
+                        input(type='text', placeholder='大家都在搜' , v-model="keyWord")
+                        button#btn(@click='search') 搜索
+                    .search_right
+                        ul.clear_fix
+                            li.login_button
+                                a(href='#')
+                                    button 登录
+                            li
+                                a(href='home') 我的工作室
+                                span
+                            li
+                                a(href='myblog') 我的博客
+                                span
+                .header_nav
+                    ul.clear_fix
+                        li
+                            a.active(href='#') 首页
+                        li
+                            a(href='#') 学院
+                        li
+                            a(href='#') 下载
+                        li
+                            a(href='#') 图文课
+                        li
+                            a(href='#') 论坛
+                        li
+                            a(href='#') APP
+                        li
+                            a(href='#') 问答
+                        li
+                            a(href='#') 商城
+                        li
+                            a(href='#') VIP会员
+                        li
+                            a(href='#') 活动
+                        li
+                            a(href='#') GitChat
+                        li
+                            a(href='#') ITeye
+                        li#down
+                            a(href='#')
+                                img(src='images/news_img/down.png')
+                    .list
+                        ul.list_down.clear_fix
+                            li
+                                a(href='#') 推荐
+                            li
+                                a(href='#') 关注
+                            li
+                                a(href='#') 程序人生
+                            li
+                                a(href='#') 前端
+                            li
+                                a(href='#') 架构
+                            li
+                                a(href='#') 区块链
+                            li
+                                a(href='#') 编程语言
+                            li
+                                a(href='#') 数据库
+                            li
+                                a(href='#') 游戏开发
+                            li
+                                a(href='#') 运维
+                            li
+                                a(href='#') 人工智能
+                            li
+                                a(href='#') 移动开发
+                            li
+                                a(href='#') 安全
+                            li
+                                a(href='#') 云计算/人工智能
+                            li
+                                a(href='#') 研发管理
+                            li
+                                a(href='#') 物联网
+                            li
+                                a(href='#') 计算机基础
+                            li
+                                a(href='#') 音视频开发
+                            li
+                                a(href='#') 其他
+            #wraper
+                .content.clear_fix
+                    // 左边区域内容 一列
+                    .content_left
+                        .left_top
+                            img(src='images/一点资讯/8.jpg' alt='')
+                            p
+                        .left_bottom
+                            ul
+                               template(lang='pug')
+                                  li.clear_fix(v-for='name in arr')
+                                     a(href='#')
+                                        .bottom_left
+                                            img(v-bind:src='name.img1')
+                                        .bottom_right
+                                            p {{name.title}}
+                                            .clear_fix
+                                                span
+                                                    img.user_icon(v-bind:src='name.img2')
+                                                span 小花聊技术
+                                                span 144评
+                                                span 刚刚
+                                                span.close X
+                               button#refresh(@click='refresh') 刷新
 
-            // 右边内容一列
-            .content_right.clear_fix
-                .right_top
-                    ul
-                        li.clear_fix
-                            .left_icon
-                                img(src='images/news_img/3.jpeg' alt='')
-                                span.icon_v
-                            .right_text
-                                p 我是疯了才去你的城市，然后哭着回来 | 24个没有你的城市故事
-                                span 新世相
-                                span 5小时前
-                        li.clear_fix
-                            .left_icon
-                                img(src='images/news_img/4.jpeg' alt='')
-                                span.icon_v
-                            .right_text
-                                p 吴亦凡不为人知的特别才艺居然是魔术?
-                                span QG娱乐
-                                span 刚刚
-                        li.clear_fix
-                            .left_icon
-                                img(src='images/news_img/5.jpeg' alt='')
-                                span.icon_v
-                            .right_text
-                                p 国外的“糖葫芦”、“煎饼馃子”都长啥样？
-                                span 果壳网
-                                span 一分钟前
-                        li.clear_fix
-                            .left_icon
-                                img(src='images/news_img/6.jpeg' alt='')
-                                span.icon_v
-                            .right_text
-                                p 我是疯了才去你的城市，然后哭着回来 | 24个没有你的城市故事
-                                span 新世相
-                                span 昨天
-                .content_mid
-                    h4 热文排行
-                    ul
-                        li
-                            a(href='#')
-                                .icon.icon1
-                                p 新京报："伺候老师应不应当"是冷血无聊的伪问题
-                        li
-                            a(href='#')
-                                .icon.icon2
-                                p 重庆官媒再批"孙政才的问题" 这次点出具体事情
-                        li
-                            a(href='#')
-                                .icon.icon3
-                                p 新京报："伺候老师应不应当"是冷血无聊的伪问题
-                        li
-                            a(href='#')
-                                .icon.icon4
-                                p 新京报："伺候老师应不应当"是冷血无聊的伪问题
-                        li
-                            a(href='#')
-                                .icon.icon5
-                                p 新京报："伺候老师应不应当"是冷血无聊的伪问题
-                .content_mid
-                    h4 热门视频
-                    ul
-                        li.clear_fix
-                            .left_img
-                                img(src='images/news_img/7.jpeg' alt='')
-                            .detial_text
-                                p 小偷进门后遇到这样的女主人，什么都没偷到也值了
-                                span 214评论
-                                span 2018.1.20
-                        li.clear_fix
-                            .left_img
-                                img(src='images/news_img/8.jpeg' alt='')
-                            .detial_text
-                                p 家里有电动车的注意了：几元钱让你十年不用更换新电瓶
-                                span 214评论
-                                span 2018.1.20
-                        li.clear_fix
-                            .left_img
-                                img(src='images/news_img/9.jpeg' alt='')
-                            .detial_text
-                                p 史上最贱的女人，这种人怎么没被打死
-                                span 214评论
-                                span 2018.1.20
-                        li.clear_fix
-                            .left_img
-                                img(src='images/news_img/10.jpeg' alt='')
-                            .detial_text
-                                p 牌穿过钞票, 钞票完好无损! 原来这个魔术这么简单
-                                span 114评论
-                                span 2018.1.10
-                .content_mid
-                    h4 热文排行<
-                    ul
-                        li
-                            a(href='#')
-                                .icon.icon1
-                                p 新京报："伺候老师应不应当"是冷血无聊的伪问题
-                        li
-                            a(href='#')
-                                .icon.icon2
-                                p 新京报："伺候老师应不应当"是冷血无聊的伪问题
-                        li
-                            a(href='#')
-                                .icon.icon3
-                                p 新京报："伺候老师应不应当"是冷血无聊的伪问题
-                        li
-                            a(href='#')
-                                .icon.icon4
-                                p 新京报："伺候老师应不应当"是冷血无聊的伪问题
-                        li
-                            a(href='#')
-                                .icon.icon5
-                                p 新京报："伺候老师应不应当"是冷血无聊的伪问题
-                    h4 热门视频
-                    ul
-                        li.clear_fix
-                            .left_img
-                                img(src='images/news_img/7.jpeg' alt='')
-                            .detial_text
-                                p 小偷进门后遇到这样的女主人，什么都没偷到也值了
-                                span 214评论
-                                span 2018.1.20
-                        li.clear_fix
-                            .left_img
-                                img(src='images/news_img/8.jpeg' alt='')
-                            .detial_text
-                                p 家里有电动车的注意了：几元钱让你十年不用更换新电瓶
-                                span 214评论
-                                span 2018.1.20
-                        li.clear_fix
-                            .left_img
-                                img(src='images/news_img/9.jpeg' alt='')
-                            .detial_text
-                                p 史上最贱的女人，这种人怎么没被打死
-                                span 214评论
-                                span 2018.1.20
-                        li.clear_fix
-                            .left_img
-                                img(src='images/news_img/10.jpeg' alt='')
-                            .detial_text
-                                p 牌穿过钞票, 钞票完好无损! 原来这个魔术这么简单
-                                span 114评论
-                                span 2018.1.10
-    .fix_icon
-        .first_icon
-            img(src='images/news_img/rotate.png' alt='')
-        .second_icon
-            img(src='images/news_img/二维码.png' alt='')
-        .three_icon
-            img(src='images/news_img/向上.png' alt='')
-    a(href='news.html' style='margin:50px 0 50px 750px;display: block;') 设计链接
-.mask
-.loginIn
-    .login_Input
-        .login_close
-            img(src='images/news_img/close.png' alt='')
-        .login_header
-            img(src='images/news_img/logo.png' alt='')
-            h1 一點資訊
-        .login_content
-            input(type='text' placeholder='手機號')
-            input.tel(type='text' placeholder='驗證碼')
-            img.validate(src='images/news_img/validate.png' alt='')
-            input.tel_validate(type='text' placeholder='手機驗證碼')
-            input.send(type='text' placeholder='发送验证码')
-        .login_text
-            .img_input
-                img.img_close(src='images/news_img/img_text.png' alt='')
-            .degree
-                span 我已閱讀并同意用戶协议
-        .login_btn 登录
-        p 账号密码登录
-            span.line
-            span 第三方平台登录
-            span.line
-        .login_footer
-            img(src='images/news_img/新浪.png' alt='')
-            img(src='images/news_img/QQ.png' alt='')
-            img(src='images/news_img/小米.png' alt='')
-script(src='./javascripts/jquery-3.2.1.min.js')
-script(src='./javascripts/news_show.js')
+                    // 右边内容一列
+                    .content_right.clear_fix
+                        .right_top
+                            ul
+                                li.clear_fix
+                                    .left_icon
+                                        img(src='images/news_img/3.jpeg' alt='')
+                                        span.icon_v
+                                    .right_text
+                                        p 斯皮格发6500字长信：不要把我们跟Facebook比
+                                        span 新世相
+                                        span 5小时前
+                                li.clear_fix
+                                    .left_icon
+                                        img(src='images/news_img/4.jpeg' alt='')
+                                        span.icon_v
+                                    .right_text
+                                        p 目标是100个百亿级大客户，赛意信息为何如此有底气？
+                                        span QG娱乐
+                                        span 刚刚
+                                li.clear_fix
+                                    .left_icon
+                                        img(src='images/news_img/5.jpeg' alt='')
+                                        span.icon_v
+                                    .right_text
+                                        p 从 WWDC17 看苹果图形技术的革新
+                                        span 果壳网
+                                        span 一分钟前
+                                li.clear_fix
+                                    .left_icon
+                                        img(src='images/news_img/6.jpeg' alt='')
+                                        span.icon_v
+                                    .right_text
+                                        p 张一鸣、王欣和罗永浩的社交梦
+                                        span 新世相
+                                        span 昨天
+                        .content_mid
+                            h4 热文排行
+                            ul
+                                li
+                                    a(href='#')
+                                        .icon.icon1
+                                        p 新京报："伺候老师应不应当"是冷血无聊的伪问题
+                                li
+                                    a(href='#')
+                                        .icon.icon2
+                                        p 重庆官媒再批"孙政才的问题" 这次点出具体事情
+                                li
+                                    a(href='#')
+                                        .icon.icon3
+                                        p 新京报："伺候老师应不应当"是冷血无聊的伪问题
+                                li
+                                    a(href='#')
+                                        .icon.icon4
+                                        p 新京报："伺候老师应不应当"是冷血无聊的伪问题
+                                li
+                                    a(href='#')
+                                        .icon.icon5
+                                        p 新京报："伺候老师应不应当"是冷血无聊的伪问题
+                        .content_mid
+                            h4 热门视频
+                            ul
+                                li.clear_fix
+                                    .left_img
+                                        img(src='images/news_img/7.jpeg' alt='')
+                                    .detial_text
+                                        p 不吹不黑，三年赶超阿里云，华为这次是认真的！
+                                        span 214评论
+                                        span 2018.1.20
+                                li.clear_fix
+                                    .left_img
+                                        img(src='images/news_img/8.jpeg' alt='')
+                                    .detial_text
+                                        p Blockchain Connect Conference 全球区块链峰会即将召开！
+                                        span 214评论
+                                        span 2018.1.20
+                                li.clear_fix
+                                    .left_img
+                                        img(src='images/news_img/9.jpeg' alt='')
+                                    .detial_text
+                                        p Android 新老两代 Camera API 大起底
+                                        span 214评论
+                                        span 2018.1.20
+                                li.clear_fix
+                                    .left_img
+                                        img(src='images/news_img/10.jpeg' alt='')
+                                    .detial_text
+                                        p 微信 Android 视频编码爬过的那些坑
+                                        span 114评论
+                                        span 2018.1.10
+                        .content_mid
+                            h4 热文排行<
+                            ul
+                                li
+                                    a(href='#')
+                                        .icon.icon1
+                                        p 【头条】vivo NEX双屏版开启用户体验新时代
+                                li
+                                    a(href='#')
+                                        .icon.icon2
+                                        p 实时视频传输的关键技术 H.264 全解析
+                                li
+                                    a(href='#')
+                                        .icon.icon3
+                                        p Android 8.0 正式发布，Google 带来了哪些新功能？
+                                li
+                                    a(href='#')
+                                        .icon.icon4
+                                        p 微信全文搜索优化之路
+                                li
+                                    a(href='#')
+                                        .icon.icon5
+                                        p 利用Docker极速下载OpenJDK11源码
+                            h4 热门视频
+                            ul
+                                li.clear_fix
+                                    .left_img
+                                        img(src='images/news_img/7.jpeg' alt='')
+                                    .detial_text
+                                        p 机器学习 - 期望最大（EM）算法
+                                        span 214评论
+                                        span 2018.1.20
+                                li.clear_fix
+                                    .left_img
+                                        img(src='images/news_img/8.jpeg' alt='')
+                                    .detial_text
+                                        p 计算机视觉与深度学习，看这本书就够了
+                                        span 214评论
+                                        span 2018.1.20
+                                li.clear_fix
+                                    .left_img
+                                        img(src='images/news_img/9.jpeg' alt='')
+                                    .detial_text
+                                        p 怎么让微信内置浏览器跳转到手机其他浏览器
+                                        span 214评论
+                                        span 2018.1.20
+                                li.clear_fix
+                                    .left_img
+                                        img(src='images/news_img/10.jpeg' alt='')
+                                    .detial_text
+                                        p 赶紧下载SublimeText并快速设置代码自动补全，效率大大提高
+                                        span 114评论
+                                        span 2018.1.10
+            .fix_icon
+                .first_icon
+                    img(src='images/news_img/rotate.png' alt='')
+                .second_icon
+                    img(src='images/news_img/二维码.png' alt='')
+                .three_icon
+                    img(src='images/news_img/向上.png' alt='')
+            a(href='news.html' style='margin:50px 0 50px 750px;display: block;') 设计链接
+    .mask
+    .loginIn
+        .login_Input
+            .login_close
+                img(src='images/news_img/close.png' alt='')
+            .login_header
+                img(src='images/news_img/logo.png' alt='')
+                h1 一點資訊
+            .login_content
+                input(type='text' placeholder='手機號')
+                input.tel(type='text' placeholder='驗證碼')
+                img.validate(src='images/news_img/validate.png' alt='')
+                input.tel_validate(type='text' placeholder='手機驗證碼')
+                input.send(type='text' placeholder='发送验证码')
+            .login_text
+                .img_input
+                    img.img_close(src='images/news_img/img_text.png' alt='')
+                .degree
+                    span 我已閱讀并同意用戶协议
+            .login_btn 登录
+            p 账号密码登录
+                span.line
+                span 第三方平台登录
+                span.line
+            .login_footer
+                img(src='images/news_img/新浪.png' alt='')
+                img(src='images/news_img/QQ.png' alt='')
+                img(src='images/news_img/小米.png' alt='')
+    script(src='./javascripts/jquery-3.2.1.min.js')
+    script(src='./javascripts/news_show.js')
+    script(src='/javascripts/news.js')
