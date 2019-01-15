@@ -12,7 +12,7 @@ var myblogRouter =require('./routes/myblog');
 var registerRouter = require('./routes/register');
 var newsRouter = require('./routes/news');
 var resumeRouter = require('./routes/resume');
-
+var personal_blogRouter = require('./routes/personal_blog');
 
 var session=require('express-session');
 var flash =require('connect-flash');
@@ -46,6 +46,7 @@ app.use('/news',newsRouter);
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/resume',resumeRouter);
+app.use('/personal_blog',personal_blogRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

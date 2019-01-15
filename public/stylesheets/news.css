@@ -60,26 +60,25 @@ img:hover{
     font-size: 35px;
     float: left;
     width: 35px;
-    font-family: iconfont!important;
+
 }
 .search_left .logo:before{
-    content: "\E75E";
+    content: "寻";
 }
-/*.search_left .logo img{*/
-/*margin-bottom: 7px;*/
-/*}*/
+.search_left .logo img{
+margin-bottom: 7px;
+}
 .search_left .icon_logo{
     float: left;
     font-size: 108px;
     display: inline-block;
     color: #343434;
     margin-top: 3px;
-    font-family: iconfont!important;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
 }
 .icon_logo:before{
-    content: "\E63A";
+    content:"  ";
 }
 .search_left input{
     height: 32px;
@@ -139,9 +138,11 @@ img:hover{
 }
 /*header_nav  导航样式 start**************/
 .header_nav{
-    width: 1080px;
+    width: 1089px;
     margin: 0 auto;
     margin-top: -15px;
+    box-shadow: 0 0 12px 0px black;
+    color: black;
 }
 .header_nav ul li {
     float: left;

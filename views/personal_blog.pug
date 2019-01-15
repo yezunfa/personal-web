@@ -1,0 +1,513 @@
+doctype html
+html
+    head
+        title 叶小花技术博客
+        meta(charset='utf-8')
+        meta(name='renderer', content='webkit|ie-comp|ie-stand')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no')
+        link(rel='stylesheet', type='text/css', href='/stylesheets/H-ui.min.css')
+        link(rel='stylesheet', type='text/css', href='/stylesheets/common.css')
+        link(rel='stylesheet', type='text/css', href='/stylesheets/iconfont.min.css')
+        script(type='application/x-javascript').
+            addEventListener("load", function() {
+                setTimeout(hideURLbar, 0);
+                }, false); function hideURLbar(){
+                    window.scrollTo(0,1);
+                } function showSide(){
+                    $('.navbar-nav').toggle();
+                }
+    body
+        header.navbar-wrapper
+            .navbar.navbar-fixed-top
+                .container.cl
+                    a.navbar-logo.hidden-xs(href='')
+                        img.logo(src='images/favicon.ico', alt='小花博客')
+                    a.logo.navbar-logo-m.visible-xs(href='/') 小花博客
+                    a.nav-toggle.Hui-iconfont.visible-xs(aria-hidden='false', href='javascript:void(0);', onclick='showSide();') 
+                    nav.nav.navbar-nav.nav-collapse.w_menu(role='navigation')
+                        ul.cl
+                            li.active
+                                a(href='home', data-hover='首页') 首页
+                            li
+                                a(href='resume', data-hover='关于我') 关于我
+                            li
+                                a(href='myblog', data-hover='碎言碎语') 碎言碎语
+                            li
+                                a(href='news', data-hover='学无止尽') 学无止尽
+                            li
+                                a(href='personal_blog', data-hover='副页') 副页
+                    nav.navbar-nav.navbar-userbar.hidden-xs.hidden-sm(style='top: 0;')
+                        ul.cl
+                            li.userInfo.dropDown.dropDown_hover
+                                //
+                                  <a href="javascript:;" ><img class="avatar radius" src="http://q.qlogo.cn/qqapp/101388738/1CF8425D24660DB8C3EBB76C03D95F35/40" alt="丶似浅 "></a>
+                                  <ul class="dropDown-menu menu radius box-shadow">
+                                  <li><a href="/app/loginOut">退出</a></li>
+                                  </ul>
+                                a(href='login', onclick="layer.msg('正在通过QQ登入', {icon:16, shade: 0.1, time:0})")
+                                    img.avatar.size-S(src='images/qq.jpg', title='登入')
+                                    | 登入
+        section.container.pt-20
+            // <div class="Huialert Huialert-info"><i class="Hui-iconfont">&#xe6a6;</i>成功状态提示</div>
+            // left
+            .col-sm-9.col-md-9
+                // 滚动图
+                .slider_main
+                    .slider
+                        .bd
+                            ul
+                                li
+                                    a(href='#', target='_blank')
+                                        img(src='/images/轮播1.png')
+                                li
+                                    a(href='#', target='_blank')
+                                        img(src='https://img-bss.csdn.net/201901151154427103.jpg')
+                                li
+                                    a(href='#', target='_blank')
+                                        img(src='https://img-bss.csdn.net/201901151149039405.png')
+                        ol.hd.cl.dots
+                            li 1
+                            li 2
+                        a.slider-arrow.prev(href='javascript:void(0)')
+                        a.slider-arrow.next(href='javascript:void(0)')
+                .mt-20.bg-fff.box-shadow.radius.mb-5
+                    .tab-category
+                        a(href='')
+                            strong.current 最新发布
+                .art_content
+                    ul.index_arc
+                        li.index_arc_item
+                            a.pic(href='#')
+                                img.lazyload(data-original='/images/art.jpg', alt='应该选')
+                            h4.title
+                                a(href='') 个人博客应该选择什么样的域名和域名后缀
+                            .date_hits
+                                span 小叶
+                                span 2017-02-24
+                                span
+                                    a(href='') 程序人生
+                                p.hits
+                                    i.Hui-iconfont(title='点击量') 
+                                    |  276°
+                                p.commonts
+                                    i.Hui-iconfont(title='点击量') 
+                                    span.cy_cmt_count 20
+                            .desc
+                                | 不论搭建什么样的网站，选择一个好的域名都是很有必要的，选择一个好的域名对网站的意义也是不言而喻的。每一个网站都有之对应的域名，就像人的名字一样。每个人都想自己有个好听的名字，网站也是一样。一个网站可以有多个域名，但是一个域名只能对应一个网站。 一、域名要好记，方便输入       域名本身的意义就是为了人们方便记忆才使用的，不然都用IP地址就好了。所以，网站域名一定要选择好记忆的。因为域名是
+                        li.index_arc_item.no_pic
+                            h4.title
+                                a(href='') 个人博客应该选择什么样的域名和域名后缀
+                            .date_hits
+                                span 小花
+                                span 2个月前
+                                span
+                                    a(href='') 建站
+                                p.hits
+                                    i.Hui-iconfont(title='点击量') 
+                                    |  276 °
+                                p.commonts
+                                    i.Hui-iconfont(title='点击量') 
+                                    span.cy_cmt_count(id='sourceId::105') 20
+                            .desc
+                                | 不论搭建什么样的网站，选择一个好的域名都是很有必要的，选择一个好的域名对网站的意义也是不言而喻的。每一个网站都有之对应的域名，就像人的名字一样。每个人都想自己有个好听的名字，网站也是一样。一个网站可以有多个域名，但是一个域名只能对应一个网站。 一、域名要好记，方便输入       域名本身的意义就是为了人们方便记忆才使用的，不然都用IP地址就好了。所以，网站域名一定要选择好记忆的。因为域名是
+                        li.index_arc_item
+                            a.pic(href='')
+                                img.lazyload(data-original='/images/art.jpg', alt='centos 6.5 nginx安装及配置')
+                            h4.title
+                                a(href='') centos 6.5 nginx安装及配置
+                            .date_hits
+                                span 小叶
+                                span 2017-3-15
+                                span
+                                    a(href='') 程序人生
+                                p.hits
+                                    i.Hui-iconfont(title='点击量') 
+                                    |  13°
+                                p.commonts
+                                    i.Hui-iconfont(title='评论') 
+                                    span.cy_cmt_count 0
+                            .desc linux环境中nginx安装及配置简要概述。。。
+                        li.index_arc_item
+                            a.pic(href='#')
+                                img.lazyload(data-original='/images/art.jpg', alt='应该选')
+                            h4.title
+                                a(href='') 个人博客应该选择什么样的域名和域名后缀
+                            .date_hits
+                                span 小花
+                                span 2017-02-24
+                                span
+                                    a(href='') 程序人生
+                                p.hits
+                                    i.Hui-iconfont(title='点击量') 
+                                    |  276°
+                                p.commonts
+                                    i.Hui-iconfont(title='点击量') 
+                                    span.cy_cmt_count 20
+                            .desc
+                                | 不论搭建什么样的网站，选择一个好的域名都是很有必要的，选择一个好的域名对网站的意义也是不言而喻的。每一个网站都有之对应的域名，就像人的名字一样。每个人都想自己有个好听的名字，网站也是一样。一个网站可以有多个域名，但是一个域名只能对应一个网站。 一、域名要好记，方便输入       域名本身的意义就是为了人们方便记忆才使用的，不然都用IP地址就好了。所以，网站域名一定要选择好记忆的。因为域名是
+                        li.index_arc_item.no_pic
+                            h4.title
+                                a(href='') 个人博客应该选择什么样的域名和域名后缀
+                            .date_hits
+                                span 小叶
+                                span 2个月前
+                                span
+                                    a(href='') 建站
+                                p.hits
+                                    i.Hui-iconfont(title='点击量') 
+                                    |  276 °
+                                p.commonts
+                                    i.Hui-iconfont(title='点击量') 
+                                    span.cy_cmt_count(id='sourceId::105') 20
+                            .desc
+                                | 不论搭建什么样的网站，选择一个好的域名都是很有必要的，选择一个好的域名对网站的意义也是不言而喻的。每一个网站都有之对应的域名，就像人的名字一样。每个人都想自己有个好听的名字，网站也是一样。一个网站可以有多个域名，但是一个域名只能对应一个网站。 一、域名要好记，方便输入       域名本身的意义就是为了人们方便记忆才使用的，不然都用IP地址就好了。所以，网站域名一定要选择好记忆的。因为域名是
+                        li.index_arc_item
+                            a.pic(href='')
+                                img.lazyload(data-original='/images/art.jpg', alt='centos 6.5 nginx安装及配置')
+                            h4.title
+                                a(href='') centos 6.5 nginx安装及配置
+                            .date_hits
+                                span 小花
+                                span 2017-3-15
+                                span
+                                    a(href='') 程序人生
+                                p.hits
+                                    i.Hui-iconfont(title='点击量') 
+                                    |  13°
+                                p.commonts
+                                    i.Hui-iconfont(title='评论') 
+                                    span.cy_cmt_count 0
+                            .desc linux环境中nginx安装及配置简要概述。。。
+                        li.index_arc_item
+                            a.pic(href='#')
+                                img.lazyload(data-original='/images/art.jpg', alt='应该选')
+                            h4.title
+                                a(href='') 个人博客应该选择什么样的域名和域名后缀
+                            .date_hits
+                                span 小叶
+                                span 2017-02-24
+                                span
+                                    a(href='') 程序人生
+                                p.hits
+                                    i.Hui-iconfont(title='点击量') 
+                                    |  276°
+                                p.commonts
+                                    i.Hui-iconfont(title='点击量') 
+                                    span.cy_cmt_count 20
+                            .desc
+                                | 不论搭建什么样的网站，选择一个好的域名都是很有必要的，选择一个好的域名对网站的意义也是不言而喻的。每一个网站都有之对应的域名，就像人的名字一样。每个人都想自己有个好听的名字，网站也是一样。一个网站可以有多个域名，但是一个域名只能对应一个网站。 一、域名要好记，方便输入       域名本身的意义就是为了人们方便记忆才使用的，不然都用IP地址就好了。所以，网站域名一定要选择好记忆的。因为域名是
+                        li.index_arc_item.no_pic
+                            h4.title
+                                a(href='') 个人博客应该选择什么样的域名和域名后缀
+                            .date_hits
+                                span 小花
+                                span 2个月前
+                                span
+                                    a(href='') 建站
+                                p.hits
+                                    i.Hui-iconfont(title='点击量') 
+                                    |  276 °
+                                p.commonts
+                                    i.Hui-iconfont(title='点击量') 
+                                    span.cy_cmt_count(id='sourceId::105') 20
+                            .desc
+                                | 不论搭建什么样的网站，选择一个好的域名都是很有必要的，选择一个好的域名对网站的意义也是不言而喻的。每一个网站都有之对应的域名，就像人的名字一样。每个人都想自己有个好听的名字，网站也是一样。一个网站可以有多个域名，但是一个域名只能对应一个网站。 一、域名要好记，方便输入       域名本身的意义就是为了人们方便记忆才使用的，不然都用IP地址就好了。所以，网站域名一定要选择好记忆的。因为域名是
+                        li.index_arc_item
+                            a.pic(href='')
+                                img.lazyload(data-original='/images/art.jpg', alt='centos 6.5 nginx安装及配置')
+                            h4.title
+                                a(href='/article/4') centos 6.5 nginx安装及配置
+                            .date_hits
+                                span 小叶
+                                span 2017-3-15
+                                span
+                                    a(href='') 程序人生
+                                p.hits
+                                    i.Hui-iconfont(title='点击量') 
+                                    |  13°
+                                p.commonts
+                                    i.Hui-iconfont(title='评论') 
+                                    span.cy_cmt_count 0
+                            .desc linux环境中nginx安装及配置简要概述。。。
+                        li.index_arc_item
+                            a.pic(href='#')
+                                img.lazyload(data-original='/images/art.jpg', alt='应该选')
+                            h4.title
+                                a(href='') 个人博客应该选择什么样的域名和域名后缀
+                            .date_hits
+                                span 小叶
+                                span 2017-02-24
+                                span
+                                    a(href='') 程序人生
+                                p.hits
+                                    i.Hui-iconfont(title='点击量') 
+                                    |  276°
+                                p.commonts
+                                    i.Hui-iconfont(title='点击量') 
+                                    span.cy_cmt_count 20
+                            .desc
+                                | 不论搭建什么样的网站，选择一个好的域名都是很有必要的，选择一个好的域名对网站的意义也是不言而喻的。每一个网站都有之对应的域名，就像人的名字一样。每个人都想自己有个好听的名字，网站也是一样。一个网站可以有多个域名，但是一个域名只能对应一个网站。 一、域名要好记，方便输入       域名本身的意义就是为了人们方便记忆才使用的，不然都用IP地址就好了。所以，网站域名一定要选择好记忆的。因为域名是
+                        li.index_arc_item.no_pic
+                            h4.title
+                                a(href='/article/5.html') 个人博客应该选择什么样的域名和域名后缀
+                            .date_hits
+                                span 小叶
+                                span 2个月前
+                                span
+                                    a(href='') 建站
+                                p.hits
+                                    i.Hui-iconfont(title='点击量') 
+                                    |  276 °
+                                p.commonts
+                                    i.Hui-iconfont(title='点击量') 
+                                    span.cy_cmt_count(id='sourceId::105') 20
+                            .desc
+                                | 不论搭建什么样的网站，选择一个好的域名都是很有必要的，选择一个好的域名对网站的意义也是不言而喻的。每一个网站都有之对应的域名，就像人的名字一样。每个人都想自己有个好听的名字，网站也是一样。一个网站可以有多个域名，但是一个域名只能对应一个网站。 一、域名要好记，方便输入       域名本身的意义就是为了人们方便记忆才使用的，不然都用IP地址就好了。所以，网站域名一定要选择好记忆的。因为域名是
+                        li.index_arc_item
+                            a.pic(href='')
+                                img.lazyload(data-original='/images/art.jpg', alt='centos 6.5 nginx安装及配置')
+                            h4.title
+                                a(href='') centos 6.5 nginx安装及配置
+                            .date_hits
+                                span 小叶
+                                span 2017-3-15
+                                span
+                                    a(href='') 程序人生
+                                p.hits
+                                    i.Hui-iconfont(title='点击量') 
+                                    |  13°
+                                p.commonts
+                                    i.Hui-iconfont(title='评论') 
+                                    span.cy_cmt_count 0
+                            .desc linux环境中nginx安装及配置简要概述。。。
+                    #moreBlog.text-c.mb-20
+                        a.btn.radius.btn-block(href='javascript:;', onclick='moreBlog();') 点击加载更多
+                        a.btn.radius.btn-block.hidden(href='javascript:;') 加载中……
+            // right
+            .col-sm-3.col-md-3
+                // 站点声明
+                .panel.panel-default.mb-20
+                    .panel-body
+                        i.Hui-iconfont(style='float: left;')  
+                        .slideTxtBox
+                            .bd
+                                ul
+                                    li
+                                        a(href='javascript:void(0);') 博客测试版上线，欢迎访问
+                                    li
+                                        a(href='javascript:void(0);') 内容如有侵犯，请立即联系管理员删除
+                                    li
+                                        a(href='javascript:void(0);') 本站内容仅供学习和参阅，不做任何商业用途
+                // 博主信息
+                .bg-fff.box-shadow.radius.mb-20
+                    .tab-category
+                        a(href='')
+                            strong 博主信息
+                    .tab-category-item
+                        ul.index_recd
+                            li.index_recd_item
+                                i.Hui-iconfont 
+                                | 姓名：叶尊发
+                            li.index_recd_item
+                                i.Hui-iconfont 
+                                | 职业：前端开发
+                            li.index_recd_item
+                                i.Hui-iconfont 
+                                | 邮箱：
+                                a(href='mailto:619489025@qq.com') 619489025@qq.com
+                            li.index_recd_item
+                                i.Hui-iconfont 
+                                | 定位：深圳
+                // 热门推荐
+                .bg-fff.box-shadow.radius.mb-20
+                    .tab-category
+                        a(href='')
+                            strong 热门推荐
+                    .tab-category-item
+                        ul.index_recd
+                            li
+                                a(href='#') 阻止a标签href默认跳转事件
+                                p.hits
+                                    i.Hui-iconfont(title='点击量') 
+                                    |  276
+                            li
+                                a(href='#') PHP面试题汇总
+                                p.hits
+                                    i.Hui-iconfont(title='点击量') 
+                                    |  276
+                            li
+                                a(href='#') 阻止a标签href默认跳转事件
+                                p.hits
+                                    i.Hui-iconfont(title='点击量') 
+                                    |  276
+                            li
+                                a(href='#') 阻止a标签href默认跳转事件
+                                p.hits
+                                    i.Hui-iconfont(title='点击量') 
+                                    |  276
+                            li
+                                a(href='#') PHP面试题汇总
+                                p.hits
+                                    i.Hui-iconfont(title='点击量') 
+                                    |  276
+                // 点击排行
+                .bg-fff.box-shadow.radius.mb-20
+                    .tab-category
+                        a(href='')
+                            strong 点击排行
+                    .tab-category-item
+                        ul.index_recd.clickTop
+                            li
+                                a(href='#') AJAX的刷新和前进后退问题解决
+                                p.hits
+                                    i.Hui-iconfont(title='点击量') 
+                                    |  276°
+                            li
+                                a(href='#') AJAX的刷新和前进后退问题解决
+                                p.hits
+                                    i.Hui-iconfont(title='点击量') 
+                                    |  276°
+                            li
+                                a(href='#') AJAX的刷新和前进后退问题解决
+                                p.hits
+                                    i.Hui-iconfont(title='点击量') 
+                                    |  276°
+                            li
+                                a(href='#') AJAX的刷新和前进后退问题解决
+                                p.hits
+                                    i.Hui-iconfont(title='点击量') 
+                                    |  276°
+                            li
+                                a(href='#') AJAX的刷新和前进后退问题解决
+                                p.hits
+                                    i.Hui-iconfont(title='点击量') 
+                                    |  276°
+                            li
+                                a(href='#') AJAX的刷新和前进后退问题解决
+                                p.hits
+                                    i.Hui-iconfont(title='点击量') 
+                                    |  276°
+                            li
+                                a(href='#') AJAX的刷新和前进后退问题解决
+                                p.hits
+                                    i.Hui-iconfont(title='点击量') 
+                                    |  276°
+                // 标签
+                .bg-fff.box-shadow.radius.mb-20
+                    .tab-category
+                        a(href='')
+                            strong 标签云
+                    .tab-category-item
+                        .tags
+                            a(href='http://www.h-ui.net/') H-ui前端框架
+                            a(href='http://www.h-ui.net/websafecolors.shtml') Web安全色
+                            a(href='http://www.h-ui.net/Hui-4.4-Unslider.shtml') jQuery轮播插件
+                            a(href='http://idc.likejianzhan.com/vhost/korea_hosting.php') 韩国云虚拟主机
+                            a(href='http://www.h-ui.net/bug.shtml') IEbug
+                            a(href='http://www.h-ui.net/site.shtml') IT网址导航
+                            a(href='http://www.h-ui.net/icon/index.shtml') 网站常用小图标
+                            a(href='http://www.h-ui.net/tools/jsformat.shtml') web工具箱
+                            a(href='http://www.h-ui.net/bg/index.shtml') 网站常用背景素材
+                            a(href='http://www.h-ui.net/yuedu/chm.shtml') H-ui阅读
+                            a(href='http://www.h-ui.net/easydialog-v2.0/index.html') 弹出层插件
+                            a(href='http://www.h-ui.net/SuperSlide2.1/demo.html') SuperSlide插件
+                            a(href='http://www.h-ui.net/TouchSlide1.1/demo.html') TouchSlide
+                // 图片
+                .bg-fff.box-shadow.radius.mb-20
+                    .tab-category
+                        a(href='')
+                            strong 扫我关注
+                    .tab-category-item
+                        img.img-responsive.lazyload(src='/images/二维码.jpg', alt='响应式图片')
+                // 友情链接
+                .bg-fff.box-shadow.radius.mb-20
+                    .tab-category
+                        a(href='')
+                            strong 隔壁邻居
+                    .tab-category-item
+                        span
+                            i.Hui-iconfont 
+                            a.btn-link(href='') 百度
+                        span
+                            i.Hui-iconfont 
+                            a.btn-link(href='#') 淘宝
+                        span
+                            i.Hui-iconfont 
+                            a.btn-link(href='#') 腾讯
+                        span
+                            i.Hui-iconfont 
+                            a.btn-link(href='#') 慕课网
+                        span
+                            i.Hui-iconfont 
+                            a.btn-link(href='#') csdn
+
+                // 最近访客
+                .bg-fff.box-shadow.radius.mb-20
+                    .tab-category
+                        a(href='')
+                            strong 最近访客
+                    .panel-body
+                        ul.recent
+                            .item
+                                img(src='http://q.qlogo.cn/qqapp/101388738/1CF8425D24660DB8C3EBB76C03D95F35/40', alt='')
+                            .item
+                                img(src='http://q.qlogo.cn/qqapp/101388738/1CF8425D24660DB8C3EBB76C03D95F35/40', alt='')
+                            .item
+                                img(src='http://q.qlogo.cn/qqapp/101388738/1CF8425D24660DB8C3EBB76C03D95F35/40', alt='')
+                            .item
+                                img(src='http://q.qlogo.cn/qqapp/101388738/1CF8425D24660DB8C3EBB76C03D95F35/40', alt='')
+                            .item
+                                img(src='http://q.qlogo.cn/qqapp/101388738/1CF8425D24660DB8C3EBB76C03D95F35/40', alt='')
+                            .item
+                                img(src='http://q.qlogo.cn/qqapp/101388738/1CF8425D24660DB8C3EBB76C03D95F35/40', alt='')
+                            .item
+                                img(src='http://q.qlogo.cn/qqapp/101388738/1CF8425D24660DB8C3EBB76C03D95F35/40', alt='')
+                            .item
+                                img(src='http://q.qlogo.cn/qqapp/101388738/1CF8425D24660DB8C3EBB76C03D95F35/40', alt='')
+                            .item
+                                img(src='http://q.qlogo.cn/qqapp/101388738/1CF8425D24660DB8C3EBB76C03D95F35/40', alt='')
+                            .item
+                                img(src='http://q.qlogo.cn/qqapp/101388738/1CF8425D24660DB8C3EBB76C03D95F35/40', alt='')
+                // 分享
+                .bg-fff.box-shadow.radius.mb-20
+                    .tab-category
+                        a(href='')
+                            strong 站点分享
+                    .panel-body
+                        .bdsharebuttonbox.Hui-share
+                            a.bds_weixin.Hui-iconfont(href='#', data-cmd='weixin', title='分享到微信') 
+                            a.bds_qzone.Hui-iconfont(href='#', data-cmd='qzone', title='分享到QQ空间') 
+                            a.bds_sqq.Hui-iconfont(href='#', data-cmd='sqq', title='分享到QQ好友') 
+                            a.bds_tsina.Hui-iconfont(href='#', data-cmd='tsina', title='分享到新浪微博') 
+                            a.bds_tqq.Hui-iconfont(href='#', data-cmd='tqq', title='分享到腾讯微博') 
+        footer.footer.mt-20
+            #foot.container-fluid
+                p
+                    | Copyright © 2018-2019 叶小花
+                    br
+                    a(href='http://www.miitbeian.gov.cn/', target='_blank') 皖ICP备17002922号
+                    br
+        script(type='text/javascript', src='/javascripts/jquery.min.js')
+        script(type='text/javascript', src='/javascripts/layer.js')
+        script(type='text/javascript', src='/javascripts/H-ui.min.js')
+        script(type='text/javascript', src='/javascripts/pifu.js')
+        script(type='text/javascript', src='/javascripts/common.js')
+        script.
+            $(function(){ $(window).on("scroll",backToTopFun); backToTopFun(); });
+        script(type='text/javascript', src='/javascripts/jquery.SuperSlide.min.js')
+        script.
+            $(function(){
+                //幻灯片
+                jQuery(".slider_main .slider").slide({mainCell: ".bd ul", titCell: ".hd li", trigger: "mouseover", effect: "leftLoop", autoPlay: true, delayTime: 700, interTime: 2000, pnLoop: true, titOnClassName: "active"})
+                //tips
+                jQuery(".slideTxtBox").slide({titCell: ".hd ul", mainCell: ".bd ul", autoPage: true, effect: "top", autoPlay: true});
+                //标签
+                $(".tags a").each(function(){
+                    var x = 9;
+                    var y = 0;
+                    var rand = parseInt(Math.random() * (x - y + 1) + y);
+                    $(this).addClass("tags"+rand)
+                });
+                $("img.lazyload").lazyload({failurelimit : 3});
+            });
