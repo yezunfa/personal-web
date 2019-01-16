@@ -17,7 +17,7 @@ let newsVM = new Vue({
         search:function() {
             this.page = 0;
             this.arr = [];
-            this.$http.post('/news', {page: this.page, line: this.line}).then(function (data) {
+            this.$http.post('/news', {page: this.page, line: this.line,keyWord:this.keyWord}).then(function (data) {
                 console.log(data);
                 this.page += this.line;
                 this.arr.push(...data.body);
