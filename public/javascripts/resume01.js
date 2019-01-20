@@ -61,7 +61,7 @@ var viewHeight=function(){
 		section[i].style.height=iheight+"px";
 
 	}
-}
+};
 var waited_develop=function(){
     var waitedli=document.getElementsByClassName("nav_bar_ul")[0].children;
     // var waiteda=waitedli.children;

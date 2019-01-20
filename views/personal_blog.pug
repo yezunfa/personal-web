@@ -9,6 +9,7 @@ html
         link(rel='stylesheet', type='text/css', href='/stylesheets/H-ui.min.css')
         link(rel='stylesheet', type='text/css', href='/stylesheets/common.css')
         link(rel='stylesheet', type='text/css', href='/Hui-iconfont/1.0.8/iconfont.css')
+        link(rel='icon', href='/images/icon04.png')
         script(type='application/x-javascript').
             addEventListener("load", function() {
                 setTimeout(hideURLbar, 0);
@@ -45,7 +46,7 @@ html
                                   <ul class="dropDown-menu menu radius box-shadow">
                                   <li><a href="/app/loginOut">退出</a></li>
                                   </ul>
-                                a(href='login', onclick="layer.msg('正在通过QQ登入', {icon:16, shade: 0.1, time:0})")
+                                a(href='login')
                                     img.avatar.size-S(src='images/qq.jpg', title='登入')
                                     | 登入
         section.container.pt-20
@@ -77,11 +78,12 @@ html
                             strong.current 最新发布
                 .art_content
                     ul.index_arc
+                       each infos in info
                         li.index_arc_item
                             a.pic(href='#')
-                                img.lazyload(data-original='/images/art.jpg', alt='应该选')
+                                img.lazyload(data-original=infos.imgpath)
                             h4.title
-                                a(href='') 个人博客应该选择什么样的域名和域名后缀
+                                a(href='') #{infos.name}
                             .date_hits
                                 span 小叶
                                 span 2017-02-24
@@ -94,193 +96,8 @@ html
                                     i.Hui-iconfont(title='点击量') 
                                     span.cy_cmt_count 20
                             .desc
-                                | 不论搭建什么样的网站，选择一个好的域名都是很有必要的，选择一个好的域名对网站的意义也是不言而喻的。每一个网站都有之对应的域名，就像人的名字一样。每个人都想自己有个好听的名字，网站也是一样。一个网站可以有多个域名，但是一个域名只能对应一个网站。 一、域名要好记，方便输入       域名本身的意义就是为了人们方便记忆才使用的，不然都用IP地址就好了。所以，网站域名一定要选择好记忆的。因为域名是
-                        li.index_arc_item.no_pic
-                            h4.title
-                                a(href='') 个人博客应该选择什么样的域名和域名后缀
-                            .date_hits
-                                span 小花
-                                span 2个月前
-                                span
-                                    a(href='') 建站
-                                p.hits
-                                    i.Hui-iconfont(title='点击量') 
-                                    |  276 °
-                                p.commonts
-                                    i.Hui-iconfont(title='点击量') 
-                                    span.cy_cmt_count(id='sourceId::105') 20
-                            .desc
-                                | 不论搭建什么样的网站，选择一个好的域名都是很有必要的，选择一个好的域名对网站的意义也是不言而喻的。每一个网站都有之对应的域名，就像人的名字一样。每个人都想自己有个好听的名字，网站也是一样。一个网站可以有多个域名，但是一个域名只能对应一个网站。 一、域名要好记，方便输入       域名本身的意义就是为了人们方便记忆才使用的，不然都用IP地址就好了。所以，网站域名一定要选择好记忆的。因为域名是
-                        li.index_arc_item
-                            a.pic(href='')
-                                img.lazyload(data-original='/images/art.jpg', alt='centos 6.5 nginx安装及配置')
-                            h4.title
-                                a(href='') centos 6.5 nginx安装及配置
-                            .date_hits
-                                span 小叶
-                                span 2017-3-15
-                                span
-                                    a(href='') 程序人生
-                                p.hits
-                                    i.Hui-iconfont(title='点击量') 
-                                    |  13°
-                                p.commonts
-                                    i.Hui-iconfont(title='评论') 
-                                    span.cy_cmt_count 0
-                            .desc linux环境中nginx安装及配置简要概述。。。
-                        li.index_arc_item
-                            a.pic(href='#')
-                                img.lazyload(data-original='/images/art.jpg', alt='应该选')
-                            h4.title
-                                a(href='') 个人博客应该选择什么样的域名和域名后缀
-                            .date_hits
-                                span 小花
-                                span 2017-02-24
-                                span
-                                    a(href='') 程序人生
-                                p.hits
-                                    i.Hui-iconfont(title='点击量') 
-                                    |  276°
-                                p.commonts
-                                    i.Hui-iconfont(title='点击量') 
-                                    span.cy_cmt_count 20
-                            .desc
-                                | 不论搭建什么样的网站，选择一个好的域名都是很有必要的，选择一个好的域名对网站的意义也是不言而喻的。每一个网站都有之对应的域名，就像人的名字一样。每个人都想自己有个好听的名字，网站也是一样。一个网站可以有多个域名，但是一个域名只能对应一个网站。 一、域名要好记，方便输入       域名本身的意义就是为了人们方便记忆才使用的，不然都用IP地址就好了。所以，网站域名一定要选择好记忆的。因为域名是
-                        li.index_arc_item.no_pic
-                            h4.title
-                                a(href='') 个人博客应该选择什么样的域名和域名后缀
-                            .date_hits
-                                span 小叶
-                                span 2个月前
-                                span
-                                    a(href='') 建站
-                                p.hits
-                                    i.Hui-iconfont(title='点击量') 
-                                    |  276 °
-                                p.commonts
-                                    i.Hui-iconfont(title='点击量') 
-                                    span.cy_cmt_count(id='sourceId::105') 20
-                            .desc
-                                | 不论搭建什么样的网站，选择一个好的域名都是很有必要的，选择一个好的域名对网站的意义也是不言而喻的。每一个网站都有之对应的域名，就像人的名字一样。每个人都想自己有个好听的名字，网站也是一样。一个网站可以有多个域名，但是一个域名只能对应一个网站。 一、域名要好记，方便输入       域名本身的意义就是为了人们方便记忆才使用的，不然都用IP地址就好了。所以，网站域名一定要选择好记忆的。因为域名是
-                        li.index_arc_item
-                            a.pic(href='')
-                                img.lazyload(data-original='/images/art.jpg', alt='centos 6.5 nginx安装及配置')
-                            h4.title
-                                a(href='') centos 6.5 nginx安装及配置
-                            .date_hits
-                                span 小花
-                                span 2017-3-15
-                                span
-                                    a(href='') 程序人生
-                                p.hits
-                                    i.Hui-iconfont(title='点击量') 
-                                    |  13°
-                                p.commonts
-                                    i.Hui-iconfont(title='评论') 
-                                    span.cy_cmt_count 0
-                            .desc linux环境中nginx安装及配置简要概述。。。
-                        li.index_arc_item
-                            a.pic(href='#')
-                                img.lazyload(data-original='/images/art.jpg', alt='应该选')
-                            h4.title
-                                a(href='') 个人博客应该选择什么样的域名和域名后缀
-                            .date_hits
-                                span 小叶
-                                span 2017-02-24
-                                span
-                                    a(href='') 程序人生
-                                p.hits
-                                    i.Hui-iconfont(title='点击量') 
-                                    |  276°
-                                p.commonts
-                                    i.Hui-iconfont(title='点击量') 
-                                    span.cy_cmt_count 20
-                            .desc
-                                | 不论搭建什么样的网站，选择一个好的域名都是很有必要的，选择一个好的域名对网站的意义也是不言而喻的。每一个网站都有之对应的域名，就像人的名字一样。每个人都想自己有个好听的名字，网站也是一样。一个网站可以有多个域名，但是一个域名只能对应一个网站。 一、域名要好记，方便输入       域名本身的意义就是为了人们方便记忆才使用的，不然都用IP地址就好了。所以，网站域名一定要选择好记忆的。因为域名是
-                        li.index_arc_item.no_pic
-                            h4.title
-                                a(href='') 个人博客应该选择什么样的域名和域名后缀
-                            .date_hits
-                                span 小花
-                                span 2个月前
-                                span
-                                    a(href='') 建站
-                                p.hits
-                                    i.Hui-iconfont(title='点击量') 
-                                    |  276 °
-                                p.commonts
-                                    i.Hui-iconfont(title='点击量') 
-                                    span.cy_cmt_count(id='sourceId::105') 20
-                            .desc
-                                | 不论搭建什么样的网站，选择一个好的域名都是很有必要的，选择一个好的域名对网站的意义也是不言而喻的。每一个网站都有之对应的域名，就像人的名字一样。每个人都想自己有个好听的名字，网站也是一样。一个网站可以有多个域名，但是一个域名只能对应一个网站。 一、域名要好记，方便输入       域名本身的意义就是为了人们方便记忆才使用的，不然都用IP地址就好了。所以，网站域名一定要选择好记忆的。因为域名是
-                        li.index_arc_item
-                            a.pic(href='')
-                                img.lazyload(data-original='/images/art.jpg', alt='centos 6.5 nginx安装及配置')
-                            h4.title
-                                a(href='/article/4') centos 6.5 nginx安装及配置
-                            .date_hits
-                                span 小叶
-                                span 2017-3-15
-                                span
-                                    a(href='') 程序人生
-                                p.hits
-                                    i.Hui-iconfont(title='点击量') 
-                                    |  13°
-                                p.commonts
-                                    i.Hui-iconfont(title='评论') 
-                                    span.cy_cmt_count 0
-                            .desc linux环境中nginx安装及配置简要概述。。。
-                        li.index_arc_item
-                            a.pic(href='#')
-                                img.lazyload(data-original='/images/art.jpg', alt='应该选')
-                            h4.title
-                                a(href='') 个人博客应该选择什么样的域名和域名后缀
-                            .date_hits
-                                span 小叶
-                                span 2017-02-24
-                                span
-                                    a(href='') 程序人生
-                                p.hits
-                                    i.Hui-iconfont(title='点击量') 
-                                    |  276°
-                                p.commonts
-                                    i.Hui-iconfont(title='点击量') 
-                                    span.cy_cmt_count 20
-                            .desc
-                                | 不论搭建什么样的网站，选择一个好的域名都是很有必要的，选择一个好的域名对网站的意义也是不言而喻的。每一个网站都有之对应的域名，就像人的名字一样。每个人都想自己有个好听的名字，网站也是一样。一个网站可以有多个域名，但是一个域名只能对应一个网站。 一、域名要好记，方便输入       域名本身的意义就是为了人们方便记忆才使用的，不然都用IP地址就好了。所以，网站域名一定要选择好记忆的。因为域名是
-                        li.index_arc_item.no_pic
-                            h4.title
-                                a(href='/article/5.html') 个人博客应该选择什么样的域名和域名后缀
-                            .date_hits
-                                span 小叶
-                                span 2个月前
-                                span
-                                    a(href='') 建站
-                                p.hits
-                                    i.Hui-iconfont(title='点击量') 
-                                    |  276 °
-                                p.commonts
-                                    i.Hui-iconfont(title='点击量') 
-                                    span.cy_cmt_count(id='sourceId::105') 20
-                            .desc
-                                | 不论搭建什么样的网站，选择一个好的域名都是很有必要的，选择一个好的域名对网站的意义也是不言而喻的。每一个网站都有之对应的域名，就像人的名字一样。每个人都想自己有个好听的名字，网站也是一样。一个网站可以有多个域名，但是一个域名只能对应一个网站。 一、域名要好记，方便输入       域名本身的意义就是为了人们方便记忆才使用的，不然都用IP地址就好了。所以，网站域名一定要选择好记忆的。因为域名是
-                        li.index_arc_item
-                            a.pic(href='')
-                                img.lazyload(data-original='/images/art.jpg', alt='centos 6.5 nginx安装及配置')
-                            h4.title
-                                a(href='') centos 6.5 nginx安装及配置
-                            .date_hits
-                                span 小叶
-                                span 2017-3-15
-                                span
-                                    a(href='') 程序人生
-                                p.hits
-                                    i.Hui-iconfont(title='点击量') 
-                                    |  13°
-                                p.commonts
-                                    i.Hui-iconfont(title='评论') 
-                                    span.cy_cmt_count 0
-                            .desc linux环境中nginx安装及配置简要概述。。。
+                                | #{infos.content}
+
                     #moreBlog.text-c.mb-20
                         a.btn.radius.btn-block(href='javascript:;', onclick='moreBlog();') 点击加载更多
                         a.btn.radius.btn-block.hidden(href='javascript:;') 加载中……

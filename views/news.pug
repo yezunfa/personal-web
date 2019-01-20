@@ -5,6 +5,7 @@ head
     link(rel='stylesheet', href='/stylesheets/reset.css')
     link(rel='stylesheet', href='/stylesheets/news.css')
     link(rel='stylesheet', href='/stylesheets/news_font.css')
+    link(rel='icon', href='/images/icon05.png')
     script(rel='text/javascript' , src='/javascripts/vue.js')
     script(rel='text/javascript' , src='/javascripts/vue-resource.min.js')
 body
@@ -33,7 +34,7 @@ body
                     .search_right
                         ul.clear_fix
                             li.login_button
-                                a(href='#')
+                                a(href='login')
                                     button 登录
                             li
                                 a(href='home') 我的工作室
@@ -133,7 +134,7 @@ body
                                                 span 144评
                                                 span 刚刚
                                                 span.close X
-                               button#refresh(@click='refresh') 刷新
+                            button#refresh(@click='refresh') 点击刷新
 
                     // 右边内容一列
                     .content_right.clear_fix

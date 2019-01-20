@@ -125,8 +125,8 @@
     width: 100%;
     background: #dcdcdc;
     text-align: center;
-    height:609px;
-    background: url("../images/图标/壁纸2.jpg") no-repeat;
+    /*height:609px;*/
+    background: url("../images/图标/壁纸2.jpg") ;
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
@@ -152,6 +152,7 @@
 .mid{
     max-width: 1060px;
     margin: 0 auto;
+    height:260px;
 }
 .mid img{
     padding:5px 5px 40px 5px ;
@@ -162,6 +163,10 @@
 }
 .mid .bottom_img:hover{
     opacity: 0;
+}
+.content_two .english_passage p{
+    color: #666;
+    font-size: 13px;
 }
 .footer{
     background:#333;

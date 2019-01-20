@@ -5,6 +5,8 @@ html(lang='en')
         title 叶小花的blog
         link(rel='stylesheet', href='stylesheets/myblog.css')
         link(rel='stylesheet', href='stylesheets/reset.css')
+        script(rel='javascript', src='javascripts/myblog.js')
+        link(rel='icon', href='/images/icon02.png')
     body
         .wrap
             header.header
@@ -28,7 +30,8 @@ html(lang='en')
                         p E-mail:619489025@qq.com
                         p 江西农业大学软件学院
                         p 前端学习
-                        button 点点我
+                        a(href='personal_blog')
+                           button 点点我
                         .more 更多
             .content
                 section.part_one
@@ -109,3 +112,4 @@ html(lang='en')
                     li 星期四
                     li 星期五
                 div @叶尊发2019-1-4
+            div#icon 回顶
